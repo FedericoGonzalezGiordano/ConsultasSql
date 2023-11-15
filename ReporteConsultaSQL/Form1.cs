@@ -22,5 +22,11 @@ namespace ReporteConsultaSQL
             FrmConsultaSQL1 frm = new FrmConsultaSQL1();
             frm.ShowDialog();
         }
+
+        private void cONSULTA2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsultaSQL2 frm = new FrmConsultaSQL2();
+            frm.ShowDialog();
+        }
     }
 }

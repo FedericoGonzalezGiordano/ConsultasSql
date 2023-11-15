@@ -30,8 +30,24 @@ namespace ReporteConsultaSQL
             DataTable dt = new DataTable();
             dt = helper.Consultar("sp_reportt");
             dgvconsulta1.DataSource = dt;
+            dgvconsulta1.AutoResizeColumns();
+
         }
 
-        
+        private void dgvconsulta1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvconsulta1.AutoResizeColumns();
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void FrmConsultaSQL1_Load(object sender, EventArgs e)
+        {
+            txtConsulta.Enabled = false;
+            txtEnunciado.Enabled = false;
+        }
     }
 }

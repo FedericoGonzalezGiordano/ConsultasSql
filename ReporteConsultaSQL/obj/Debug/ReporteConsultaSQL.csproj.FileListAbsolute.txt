@@ -9,3 +9,4 @@ C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Deb
 C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.csproj.CoreCompileInputs.cache
 C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.exe
 C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.pdb
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.FrmConsultaSQL2.resources

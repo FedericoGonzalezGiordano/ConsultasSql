@@ -32,5 +32,22 @@ namespace ReporteConsultaSQL
             conexion.Close();
             return tabla;
         }
+
+        public DataTable Consultar(string nombreSp, Parametro parametro)
+        {
+            conexion.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = nombreSp;
+
+            comando.Parameters.AddWithValue(parametro.Nombre, parametro.Valor);
+
+
+            DataTable tabla = new DataTable();
+            tabla.Load(comando.ExecuteReader());
+            conexion.Close();
+            return tabla;
+        }
     }
 }

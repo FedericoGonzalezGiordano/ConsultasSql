@@ -118,29 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="txtConsulta.Text" xml:space="preserve">
-    <value>select COUNT(f.ID)'Cantidad de facturas',
-       fp.DESCRICION 'Forma de pago',
-	   SUM(df.CANTIDAD*df.MONTO)'Monto Total',
-	   SUM(df.CANTIDAD*df.MONTO)/COUNT(df.ID) 'Promedio Facturado',
-	   f.FECHA 'Fecha Facturacion',
-	   c.APELLIDO+SPACE(1)+c.NOMBRE 'Nombre Cliente',	  
-	   f.ID 'Nro Factura'   
-from CLIENTES c join FACTURAS f on c.ID=f.EMPLEADO
-join RESERVAS r on r.ID=f.RESERVA
-join FACTURA_DETALLES df on df.FACTURA=f.ID
-join FACTURAS_FORMAS_PAGO ffp on f.ID=ffp.FACTURA
-join FORMAS_PAGOS fp on fp.ID=ffp.FORMA_PAGO
-where YEAR(r.FECHA_RESERVA) between 2020 and 2023
-and c.APELLIDO like '%[a]' 
-group by c.APELLIDO,c.NOMBRE,fp.DESCRICION,f.ID,f.FECHA
-having  SUM(df.CANTIDAD*df.MONTO)&lt;(select SUM(df1.CANTIDAD*df1.MONTO)/COUNT(df1.ID)   from FACTURA_DETALLES df1)</value>
+    <value>SELECT count(f.CLIENTE) Cantidad, MONTH(F.FECHA) Mes, YEAR(F.FECHA) Año, SUM(D.MONTO) Total, max(d.cantidad) MayorCantidad 
+FROM FACTURAS F JOIN CLIENTES C ON F.CLIENTE= C.ID
+JOIN FACTURA_DETALLES D ON F.ID=D.FACTURA
+join FACTURAS_FORMAS_PAGO fp on fp.FACTURA = f.id
+join FORMAS_PAGOS p on p.ID= fp.FORMA_PAGO
+where year(f.fecha) = @año
+group by  MONTH(F.FECHA), YEAR(F.FECHA)</value>
   </data>
   <data name="txtEnunciado.Text" xml:space="preserve">
-    <value>
-Se desea conocer la cantidad de reservas cuyo estado sea pagado, la cantidad de habitaciones reservadas y su categoría, 
-el monto total de las habitaciones donde la fecha de la reserva oscile entre 2020 y 2023, que hayan sido reservada para clientes cuyo
- apellido termine con la letra 'a' por año , estado, habitación, categoría y nombre completo del cliente para aquellos casos donde el
- promedio del monto de las habitaciones sea menor que el monto total de habitaciones a nivel global 
-</value>
+    <value>Crear un procedimiento almacenado que obtenga estadísticas mensuales de clientes y montos recaudados, y el servicio más solicitado. Las estadísticas incluyen la cantidad de clientes que ingresan, el mes y año de las transacciones, el monto total recaudado y la mayor cantidad de detalles de factura registrada en un mes. Se debe usar como parametro el año a ingresar </value>
   </data>
 </root>

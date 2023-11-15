@@ -30,13 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cONSULTA1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cONSULTA1ToolStripMenuItem});
+            this.cONSULTA1ToolStripMenuItem,
+            this.cONSULTA2ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(713, 24);
@@ -46,9 +48,16 @@
             // cONSULTA1ToolStripMenuItem
             // 
             this.cONSULTA1ToolStripMenuItem.Name = "cONSULTA1ToolStripMenuItem";
-            this.cONSULTA1ToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.cONSULTA1ToolStripMenuItem.Text = "CONSULTA1";
+            this.cONSULTA1ToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.cONSULTA1ToolStripMenuItem.Text = "CONSULTA 1";
             this.cONSULTA1ToolStripMenuItem.Click += new System.EventHandler(this.cONSULTA1ToolStripMenuItem_Click);
+            // 
+            // cONSULTA2ToolStripMenuItem
+            // 
+            this.cONSULTA2ToolStripMenuItem.Name = "cONSULTA2ToolStripMenuItem";
+            this.cONSULTA2ToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.cONSULTA2ToolStripMenuItem.Text = "CONSULTA 2";
+            this.cONSULTA2ToolStripMenuItem.Click += new System.EventHandler(this.cONSULTA2ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -70,6 +79,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cONSULTA1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTA2ToolStripMenuItem;
     }
 }
 

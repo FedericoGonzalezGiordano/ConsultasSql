@@ -30,44 +30,47 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaSQL1));
             this.lblConsulta1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtConsulta = new System.Windows.Forms.TextBox();
             this.dgvconsulta1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
+            this.LblEnunciado = new System.Windows.Forms.Label();
+            this.txtEnunciado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsulta1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblConsulta1
             // 
             this.lblConsulta1.AutoSize = true;
-            this.lblConsulta1.Location = new System.Drawing.Point(40, 12);
+            this.lblConsulta1.Location = new System.Drawing.Point(40, 117);
             this.lblConsulta1.Name = "lblConsulta1";
             this.lblConsulta1.Size = new System.Drawing.Size(57, 13);
             this.lblConsulta1.TabIndex = 0;
             this.lblConsulta1.Text = "Consulta 1";
             // 
-            // textBox1
+            // txtConsulta
             // 
-            this.textBox1.Location = new System.Drawing.Point(138, 9);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(612, 232);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.txtConsulta.Location = new System.Drawing.Point(130, 117);
+            this.txtConsulta.Multiline = true;
+            this.txtConsulta.Name = "txtConsulta";
+            this.txtConsulta.Size = new System.Drawing.Size(523, 232);
+            this.txtConsulta.TabIndex = 1;
+            this.txtConsulta.Text = resources.GetString("txtConsulta.Text");
             // 
             // dgvconsulta1
             // 
             this.dgvconsulta1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvconsulta1.Location = new System.Drawing.Point(31, 286);
+            this.dgvconsulta1.Location = new System.Drawing.Point(42, 365);
             this.dgvconsulta1.Name = "dgvconsulta1";
-            this.dgvconsulta1.Size = new System.Drawing.Size(802, 374);
+            this.dgvconsulta1.Size = new System.Drawing.Size(793, 266);
             this.dgvconsulta1.TabIndex = 2;
+            this.dgvconsulta1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvconsulta1_CellContentClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(250, 686);
+            this.button1.Location = new System.Drawing.Point(257, 658);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 36);
+            this.button1.Size = new System.Drawing.Size(143, 36);
             this.button1.TabIndex = 3;
             this.button1.Text = "CONSULTAR";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,25 +78,47 @@
             // 
             // BtnAtras
             // 
-            this.BtnAtras.Location = new System.Drawing.Point(496, 686);
+            this.BtnAtras.Location = new System.Drawing.Point(440, 658);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(199, 36);
+            this.BtnAtras.Size = new System.Drawing.Size(143, 36);
             this.BtnAtras.TabIndex = 4;
             this.BtnAtras.Text = "ATRAS";
             this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
+            // LblEnunciado
+            // 
+            this.LblEnunciado.AutoSize = true;
+            this.LblEnunciado.Location = new System.Drawing.Point(39, 15);
+            this.LblEnunciado.Name = "LblEnunciado";
+            this.LblEnunciado.Size = new System.Drawing.Size(58, 13);
+            this.LblEnunciado.TabIndex = 5;
+            this.LblEnunciado.Text = "Enunciado";
+            // 
+            // txtEnunciado
+            // 
+            this.txtEnunciado.Location = new System.Drawing.Point(130, 12);
+            this.txtEnunciado.Multiline = true;
+            this.txtEnunciado.Name = "txtEnunciado";
+            this.txtEnunciado.Size = new System.Drawing.Size(652, 86);
+            this.txtEnunciado.TabIndex = 6;
+            this.txtEnunciado.Text = resources.GetString("txtEnunciado.Text");
             // 
             // FrmConsultaSQL1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 744);
+            this.ClientSize = new System.Drawing.Size(851, 706);
+            this.Controls.Add(this.txtEnunciado);
+            this.Controls.Add(this.LblEnunciado);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvconsulta1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtConsulta);
             this.Controls.Add(this.lblConsulta1);
             this.Name = "FrmConsultaSQL1";
             this.Text = "FrmConsultaSQL1";
+            this.Load += new System.EventHandler(this.FrmConsultaSQL1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsulta1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,9 +128,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblConsulta1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConsulta;
         private System.Windows.Forms.DataGridView dgvconsulta1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnAtras;
+        private System.Windows.Forms.Label LblEnunciado;
+        private System.Windows.Forms.TextBox txtEnunciado;
     }
 }
