@@ -1,0 +1,11 @@
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\bin\Debug\ReporteConsultaSQL.exe.config
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\bin\Debug\ReporteConsultaSQL.exe
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\bin\Debug\ReporteConsultaSQL.pdb
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.csproj.AssemblyReference.cache
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.Form1.resources
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.FrmConsultaSQL1.resources
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.Properties.Resources.resources
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.csproj.GenerateResource.cache
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.csproj.CoreCompileInputs.cache
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.exe
+C:\Users\Federico gonzalez\Desktop\ReporteConsultaSQL\ReporteConsultaSQL\obj\Debug\ReporteConsultaSQL.pdb
