@@ -53,14 +53,14 @@
             this.txtConsulta.Location = new System.Drawing.Point(130, 117);
             this.txtConsulta.Multiline = true;
             this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(523, 232);
+            this.txtConsulta.Size = new System.Drawing.Size(660, 221);
             this.txtConsulta.TabIndex = 1;
             this.txtConsulta.Text = resources.GetString("txtConsulta.Text");
             // 
             // dgvconsulta1
             // 
             this.dgvconsulta1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvconsulta1.Location = new System.Drawing.Point(42, 365);
+            this.dgvconsulta1.Location = new System.Drawing.Point(42, 362);
             this.dgvconsulta1.Name = "dgvconsulta1";
             this.dgvconsulta1.Size = new System.Drawing.Size(793, 266);
             this.dgvconsulta1.TabIndex = 2;
@@ -100,7 +100,7 @@
             this.txtEnunciado.Location = new System.Drawing.Point(130, 12);
             this.txtEnunciado.Multiline = true;
             this.txtEnunciado.Name = "txtEnunciado";
-            this.txtEnunciado.Size = new System.Drawing.Size(652, 86);
+            this.txtEnunciado.Size = new System.Drawing.Size(660, 86);
             this.txtEnunciado.TabIndex = 6;
             this.txtEnunciado.Text = resources.GetString("txtEnunciado.Text");
             // 
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 706);
+            this.ClientSize = new System.Drawing.Size(852, 705);
             this.Controls.Add(this.txtEnunciado);
             this.Controls.Add(this.LblEnunciado);
             this.Controls.Add(this.BtnAtras);
